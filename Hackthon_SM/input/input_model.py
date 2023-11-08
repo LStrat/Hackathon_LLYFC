@@ -7,7 +7,6 @@ from lava.magma.core.model.py.ports import PyOutPort
 from input.input_process import InputReader
 import numpy as np
 from data_laoder import read_events
-
 @implements(proc=InputReader, protocol=LoihiProtocol)
 @requires(CPU)
 class InputReaderProcessModel(PyLoihiProcessModel):
